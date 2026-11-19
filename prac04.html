@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Today's Date</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: lightblue;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        #date {
+            font-size: 25px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Today's Date</h1>
+
+    <p id="date"></p>
+
+    <script>
+        let today = new Date();
+
+        let date = today.toDateString();
+
+        document.getElementById("date").innerHTML = date;
+    </script>
+
+</body>
+
+</html>
